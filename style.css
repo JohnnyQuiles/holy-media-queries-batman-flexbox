@@ -8,12 +8,15 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  
+
 }
 
 #header {
   background-color: #f3ca40;
   height: 20vh;
   width: 100vw;
+  border: 2px solid #000;
 }
 
 #middle {
@@ -22,30 +25,73 @@
   align-items: stretch;
   height: 60vh;
   width: 100vw;
+  border: 2px solid #000;
 }
+
 
 #main {
   display: flex;
   width: 80%;
+  
 }
 
 #nav {
   width: 20%;
   background-color: #4b4e6d;
+  border: 2px solid crimson; 
 }
 
 #articles {
   width: 60vw;
   background-color: #6a8d92;
+  border: 2px solid crimson; 
 }
 
 #ads {
   width: 20vw;
   background-color: #f2a541;
+  border: 2px solid crimson; 
 }
 
 #footer {
   height: 20vh;
   width: 100vw;
   background-color: #f08a4b;
+  border: 2px solid #000;
+}
+
+
+/* MOBILE LAYOUT */
+@media screen and (max-width: 700px) {
+
+  #middle {
+    flex-direction: column; 
+    align-items: center;
+    
+    }
+  #main {
+    flex-direction: column; 
+    align-items: center;
+  
+  }
+
+  #nav {
+    
+  }
+
+  #articles {
+    align-self: center;
+    
+    
+  }
+
+  #ads {
+    
+    
+  }
+
+  
+
+
+
 }
